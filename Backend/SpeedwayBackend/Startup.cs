@@ -4,6 +4,7 @@ using Speedway.Service;
 
 namespace SpeedwayBackend
 {
+    //sonarcloud test
     public class Startup
     {
         public Startup(IConfiguration configuration) 
