@@ -27,8 +27,6 @@ namespace SpeedwayBackend
             opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
                 .AddNewtonsoftJson(opt => opt.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
-            services.AddControllers();
-
             services.AddTransient<IRunService, RunService>()
                     .AddTransient<IPointService, PointService>()
                     .AddTransient<ICountryService, CountryService>();
