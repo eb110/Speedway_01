@@ -1,5 +1,5 @@
 pipeline {
-    
+
     agent any
 
     environment {
@@ -31,47 +31,30 @@ pipeline {
             }
         }
 
+        stage ('Test') {
+            steps {
+                script {
+                    //Running tests
+                    bat "dotnet test --no-restore --configuration Release"
+                }
+            }
+        }
+
+        stage('Publish') {
+            steps {
+                script {
+                    //Publish the application
+                    bat "dotnet publish --no-restore --configuration Release --output .\\publish"
+                }
+            }
+        }
+
+        post {
+            success {
+                echo 'Build, test and publish successful'
+            }
+        }
+
     }
-
-     
-
-    // stage('Build') {
-    //     steps {
-    //         script {
-    //             //in this scenario the project is going to be tested from the
-    //             //win11 env so we do not have to specify the path for dotnet
-    //             //Restoring dependencies
-    //             //bat "cd ${DOTNET_CLI_HOME} && dotnet restore"
-    //             bat "dotnet restore"
-
-    //             //building the application
-    //             bat "dotnet build -- configuration Release"
-    //         }
-    //     }
-    // }
-
-    // stage ('Test') {
-    //     steps {
-    //         script {
-    //             //Running tests
-    //             bat "dotnet test --no-restore --configuration Release"
-    //         }
-    //     }
-    // }
-
-    // stage('Publish') {
-    //     steps {
-    //         script {
-    //             //Publish the application
-    //             bat "dotnet publish --no-restore --configuration Release --output .\\publish"
-    //         }
-    //     }
-    // }
-
-    // post {
-    //     success {
-    //         echo 'Build, test and publish successful'
-    //     }
-    // }
 
 }
