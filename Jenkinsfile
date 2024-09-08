@@ -1,4 +1,5 @@
 pipeline {
+    
     agent any
 
     environment {
@@ -7,13 +8,32 @@ pipeline {
     }
 
     stages {
+
         stage('Checkout') {
             steps {
                 //copyt project files to jenkins
                 checkout scm
             }
         }
+
+        stage('Build') {
+            steps {
+                script {
+                    //in this scenario the project is going to be tested from the
+                    //win11 env so we do not have to specify the path for dotnet
+                    //Restoring dependencies
+                    //bat "cd ${DOTNET_CLI_HOME} && dotnet restore"
+                    bat "dotnet restore"
+
+                    //building the application
+                    bat "dotnet build -- configuration Release"
+                }
+            }
+        }
+
     }
+
+     
 
     // stage('Build') {
     //     steps {
