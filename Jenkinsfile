@@ -16,7 +16,7 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Restore') {
             steps {
                 script {
                     //in this scenario the project is going to be tested from the
@@ -24,6 +24,21 @@ pipeline {
                     //Restoring dependencies
                     //bat "cd ${DOTNET_CLI_HOME} && dotnet restore"
                     bat "dotnet restore"
+
+                    //building the application
+                    //bat "dotnet build -- configuration Release"
+                }
+            }
+        }
+
+           stage('Build') {
+            steps {
+                script {
+                    //in this scenario the project is going to be tested from the
+                    //win11 env so we do not have to specify the path for dotnet
+                    //Restoring dependencies
+                    //bat "cd ${DOTNET_CLI_HOME} && dotnet restore"
+                    //bat "dotnet restore"
 
                     //building the application
                     bat "dotnet build -- configuration Release"
