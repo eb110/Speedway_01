@@ -41,7 +41,7 @@ pipeline {
                     //bat "dotnet restore"
 
                     //building the application
-                    bat "dotnet build -- configuration Release"
+                    bat "dotnet build --configuration Release"
                 }
             }
         }
