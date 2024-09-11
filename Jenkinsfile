@@ -13,10 +13,10 @@ pipeline{
         }
        stage('Run Sonarqube') {
             environment {
-                scannerHome = tool 'LocalSonarQube';
+                scannerHome = tool 'SonarScannerLocal';
             }
             steps {
-              withSonarQubeEnv(credentialsId: 'jenkins-sonar', installationName: 'SonarScannerLocal') {
+              withSonarQubeEnv(credentialsId: 'jenkins-sonar', installationName: 'LocalSonarQube') {
                 sh "C:/Software/Sonar/sonar-scanner-6.1.0.4477-windows-x64/bin"
               }
             }
