@@ -1,4 +1,10 @@
 pipeline{
+  agent any
+
+    environment {
+        //location of the installation folder
+        DOTNET_CLI_HOME = "C:\\Program Files\\dotnet"
+    }
     stages {
         stage('SCM Checkout') {
           steps{
