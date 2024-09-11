@@ -1,0 +1,10 @@
+p
+eC:\Speedway\Speedway_01\Speedway.API\obj\Debug\net8.0\Speedway.API.MvcApplicationPartsAssemblyInfo.csutf-8]
+RC:\Speedway\Speedway_01\Speedway.API\obj\Debug\net8.0\Speedway.API.AssemblyInfo.csutf-8o
+dC:\Speedway\Speedway_01\Speedway.API\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8_
+TC:\Speedway\Speedway_01\Speedway.API\obj\Debug\net8.0\Speedway.API.GlobalUsings.g.csutf-88
+/C:\Speedway\Speedway_01\Speedway.API\Startup.csutf-88
+/C:\Speedway\Speedway_01\Speedway.API\Program.csutf-8J
+AC:\Speedway\Speedway_01\Speedway.API\Controllers\RunController.csutf-8L
+CC:\Speedway\Speedway_01\Speedway.API\Controllers\PointController.csutf-8N
+EC:\Speedway\Speedway_01\Speedway.API\Controllers\CountryController.csutf-8

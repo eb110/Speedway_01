@@ -1,0 +1,350 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.8.0.0",
+        "fileVersion": "4.8.0-7.23572.1 (7b75981c)",
+        "semanticVersion": "4.8.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/appsettings.json",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 30,
+                  "endLine": 3,
+                  "endColumn": 144
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'SpeedwayDbConnection' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/PointController.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 71,
+                  "endLine": 26,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/PointController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 71,
+                  "endLine": 34,
+                  "endColumn": 93
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/PointController.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 71,
+                  "endLine": 42,
+                  "endColumn": 93
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/PointController.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 71,
+                  "endLine": 50,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'SpeedwayDbConnection' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/CountryController.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 71,
+                  "endLine": 31,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/CountryController.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 71,
+                  "endLine": 39,
+                  "endColumn": 93
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/CountryController.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 71,
+                  "endLine": 47,
+                  "endColumn": 93
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/CountryController.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 71,
+                  "endLine": 55,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'SpeedwayDbConnection' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/RunController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 71,
+                  "endLine": 22,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/RunController.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 71,
+                  "endLine": 30,
+                  "endColumn": 93
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/RunController.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 71,
+                  "endLine": 38,
+                  "endColumn": 93
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/RunController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 71,
+                  "endLine": 46,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6932",
+          "level": "warning",
+          "message": "Use IFormFile or IFormFileCollection binding instead",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Controllers/CountryController.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 30,
+                  "endLine": 65,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S5122",
+          "level": "warning",
+          "message": "Make sure this permissive CORS policy is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Startup.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 32,
+                  "endLine": 38,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S5122",
+          "level": "warning",
+          "message": "Make sure this permissive CORS policy is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Speedway/Speedway_01/Speedway.API/Startup.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 51,
+                  "endLine": 22,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1192",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S5122": {
+          "id": "S5122",
+          "shortDescription": "Having a permissive Cross-Origin Resource Sharing policy is security-sensitive",
+          "fullDescription": "Having a permissive Cross-Origin Resource Sharing policy is security-sensitive. It has led in the past to the following vulnerabilities:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-5122",
+          "properties": {
+            "category": "Minor Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6932": {
+          "id": "S6932",
+          "shortDescription": "Use model binding instead of reading raw request data",
+          "fullDescription": "The HttpRequest class provides access to the raw request data through the QueryString, Headers, and Forms properties. However, whenever possible it is recommended to use model binding instead of directly accessing the input data.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6932",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

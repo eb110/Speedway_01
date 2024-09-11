@@ -1,0 +1,13 @@
+﻿C:\Speedway\Speedway_01\Speedway.API\Controllers\CountryController.cs
+C:\Speedway\Speedway_01\Speedway.API\Controllers\PointController.cs
+C:\Speedway\Speedway_01\Speedway.API\Controllers\RunController.cs
+C:\Speedway\Speedway_01\Speedway.API\Program.cs
+C:\Speedway\Speedway_01\Speedway.API\Startup.cs
+C:\Speedway\Speedway_01\Speedway.API\obj\Debug\net8.0\Speedway.API.GlobalUsings.g.cs
+C:\Speedway\Speedway_01\Speedway.API\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\Speedway\Speedway_01\Speedway.API\obj\Debug\net8.0\Speedway.API.AssemblyInfo.cs
+C:\Speedway\Speedway_01\Speedway.API\obj\Debug\net8.0\Speedway.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Speedway\Speedway_01\Speedway.API\appsettings.Development.json
+C:\Speedway\Speedway_01\Speedway.API\appsettings.json
+C:\Speedway\Speedway_01\Speedway.API\Photos\Flags\FlagaPoski.png
+C:\Speedway\Speedway_01\Speedway.API\Properties\launchSettings.json

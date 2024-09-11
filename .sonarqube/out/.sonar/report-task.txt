@@ -1,0 +1,6 @@
+projectKey=speedway_local
+serverUrl=http://localhost:9090
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:9090/dashboard?id=speedway_local
+ceTaskId=8fbb39f6-583a-46dd-9a32-d680f59d3998
+ceTaskUrl=http://localhost:9090/api/ce/task?id=8fbb39f6-583a-46dd-9a32-d680f59d3998

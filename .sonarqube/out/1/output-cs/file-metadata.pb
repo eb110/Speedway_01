@@ -1,0 +1,10 @@
+e
+ZC:\Speedway\Speedway_01\Speedway.Service\obj\Debug\net8.0\Speedway.Service.AssemblyInfo.csutf-8s
+hC:\Speedway\Speedway_01\Speedway.Service\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8?
+6C:\Speedway\Speedway_01\Speedway.Service\RunService.csutf-8A
+8C:\Speedway\Speedway_01\Speedway.Service\PointService.csutf-8g
+\C:\Speedway\Speedway_01\Speedway.Service\obj\Debug\net8.0\Speedway.Service.GlobalUsings.g.csutf-8@
+7C:\Speedway\Speedway_01\Speedway.Service\IRunService.csutf-8B
+9C:\Speedway\Speedway_01\Speedway.Service\IPointService.csutf-8D
+;C:\Speedway\Speedway_01\Speedway.Service\ICountryService.csutf-8C
+:C:\Speedway\Speedway_01\Speedway.Service\CountryService.csutf-8
