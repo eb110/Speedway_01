@@ -1,18 +1,13 @@
-pipeline {
-  agent any
-  stages {
-       stage('Checkout') {
-            steps {
-                //copyt project files to jenkins
-                checkout scm
-            }
-        }
-    stage ('test'){
-      steps {
-        script {
-          bat "dotnet tool install --global coverlet.console"
-        }
-      }
+node {
+  stage('SCM') {
+    checkout scm
+  }
+  stage('SonarQube Analysis') {
+    def scannerHome = tool 'sc'
+    withSonarQubeEnv() {
+      bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:\"jenkins_01\" /d:sonar.cs.opencover.reportsPaths=coverage.xml"
+      bat "dotnet build"
+      bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll end"
     }
   }
 }
