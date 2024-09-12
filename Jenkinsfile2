@@ -13,7 +13,7 @@ pipeline{
         }
        stage('Run Sonarqube') {
             environment {
-                scannerHome = tool 'SonarScannerLocal';
+                scannerHome = tool 'sc';
             }
             steps {
               withSonarQubeEnv(credentialsId: 'jenkins-sonar', installationName: 'LocalSonarQube') {
