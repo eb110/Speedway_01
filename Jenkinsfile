@@ -1,13 +1,14 @@
-node {
-  stage('SCM') {
-    checkout scm
+pipeline {
+  agent {
+    label any
   }
-  stage('SonarQube Analysis') {
-    def scannerHome = tool 'sc'
-    withSonarQubeEnv() {
-      bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:\"jenkins_01\""
-      bat "dotnet build"
-      bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll end"
+  stages {
+    stage ('test'){
+      steps {
+        script {
+          sh 'dotnet tool install --global dotnet-sonarscanner'
+        }
+      }
     }
   }
 }
