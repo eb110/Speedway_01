@@ -10,7 +10,7 @@ pipeline {
     stage ('test'){
       steps {
         script {
-          bat "dotnet tool install --global dotnet-sonarscanner"
+          bat "dotnet tool install --global coverlet.console"
         }
       }
     }
